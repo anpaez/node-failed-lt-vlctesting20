@@ -7,6 +7,7 @@ app.get("/", (req,res) => {
 })
 
 app.get("/hola", (req,res) => {
+    setTimeout(() => {  console.log("World!"); }, 2000);
     res.status(200).send("<h1>¡Hola VLCTesting!</h1>");
 });
 
